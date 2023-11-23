@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tartans Mic</title>
+
+  <!-- 
+    - favicon link
+  -->
+ <link rel="shortcut icon" href="/images/gi4.gif" type="image/gif" sizes=10x5">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="active" data-header>
+    <div class="container">
+
+      <!-- 
+        - overlay
+      -->
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./images/giffinal.gif" alt="The Tartans Mic">
+        <p>The Tartans Mic</p>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#podcast" class="navbar-link">Podcast</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Host</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-actions">
+
+          <button class="navbar-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="navbar-btn">
+            <ion-icon name="log-in-outline"></ion-icon>
+          </button>
+
+          <button class="navbar-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+          </button>
+
+          <button class="btn">
+            <ion-icon name="share-outline"></ion-icon>
+
+            <span>Share</span>
+          </button>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+          <img src="./images/7.png" alt="Podcast" class="logo">
+
+          <p class="hero-text">
+            Tune in, Speak Out and Claim Your Narrative: CMU-Q's Unfiltered Space for Authentic Identity. </p>
+
+          <div class="hero-btn-group">
+
+            <button class="btn btn-primary">
+              <ion-icon name="headset"></ion-icon>
+
+              <span>Listen Now</span>
+            </button>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-banner"></div>
+
+      </section>
+
+
+
+      <!-- 
+        - #PODCAST
+      -->
+
+      <section class="podcast" id="podcast">
+        <ul class="podcast-list">
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner" onclick="playAudio()">
+                <img src="./images/cmu.jpg" alt="How Authentic Are You?"\>
+
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+              <p>How Authentic Are You? What every student says about authenticity</p>
+
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2023-11-20">Nov 20, 2023</time>
+
+                  <p class="pod-epi">Episode 01</p>
+                </div>
+                <!-- Audio Player -->
+               <audio controls>
+               <!-- Replace 'your-audio-file.mp3' with the actual path to your audio file -->
+               <source src="./audio/Final%20Audio.mp3" type="audio/mp3">
+
+               </audio>
+
+              </div>
+            </a>
+
+
+            <script>
+    function playAudio() {
+      // Get the necessary information from the clicked element
+      var imageSrc = document.querySelector('.card-banner img').getAttribute('src');
+      var episodeTitle = document.querySelector('.card-content p').innerText;
+
+      // Open a new window or tab with the podcast details
+      var newWindow = window.open('', '_blank');
+      newWindow.document.write(`
+        <html>
+          <head>
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>Tartans Mic</title>
+
+
+
+
+
+  <!--
+    - favicon link
+  -->
+ <link rel="shortcut icon" href="/images/gi4.gif" type="image/gif" sizes=10x5">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="active" data-header>
+    <div class="container">
+
+      <!--
+        - overlay
+      -->
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./images/giffinal.gif" alt="The Tartans Mic">
+        <p>The Tartans Mic</p>
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#podcast" class="navbar-link">Podcast</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Host</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-actions">
+
+          <button class="navbar-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="navbar-btn">
+            <ion-icon name="log-in-outline"></ion-icon>
+          </button>
+
+          <button class="navbar-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+          </button>
+
+          <button class="btn">
+            <ion-icon name="share-outline"></ion-icon>
+
+            <span>Share</span>
+          </button>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+          <img src="./images/7.png" alt="Podcast" class="logo">
+
+          <p class="hero-text">
+            Tune in, Speak Out and Claim Your Narrative: CMU-Q's Unfiltered Space for Authentic Identity. </p>
+
+          <div class="hero-btn-group">
+
+            <button class="btn btn-primary">
+              <ion-icon name="headset"></ion-icon>
+
+              <span>Listen Now</span>
+            </button>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-banner"></div>
+
+      </section>
+            <!--- Start new episode section-->
+          </head>
+            <title>${episodeTitle}</title>
+          </head>
+
+
+          <body>
+            <figure>
+              <img src="${imageSrc}" alt="${episodeTitle}" style="max-width: 70%; width: auto; height: auto">
+            </figure>
+            <p>${episodeTitle}</p>
+            <p> As students at Carnegie Mellon University in Qatar come from different backgrounds, they create this multidiverse</p>
+            <p>community</p>
+            <audio controls style="width: 70%;">
+
+              <source src="./audio/Final%20Audio.mp3" type="audio/mp3">
+            </audio>
+          </body>
+
+          <!-- The footer of the new page-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </html>
+      `);
+
+      // Play the audio in the new window
+      newWindow.document.querySelector('audio').play();
+    }
+  </script>
+
+
+
+
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./images/ep2.jpg" alt=" Social Norms and Superdiversity at CMU ">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+              <p>Social Norms and Students' adaptation to Superdiversity at CMU</p>
+
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2023-11-22">Nov 23, 2023</time>
+
+                  <p class="pod-epi">Episodes 02</p>
+                </div>
+                   <!-- Audio Player -->
+               <audio controls>
+               <!-- Replace 'your-audio-file.mp3' with the actual path to your audio file -->
+               <source src="your-audio-file.mp3" type="audio/mp3">
+
+               </audio>
+
+              </div>
+
+            </a>
+
+
+          </li>
+
+
+              <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./images/newflamenca.jpeg" alt=" Freshmen 2024 Experience with Identity Construction at CMU-Q">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+              <p>Blurriness is the Physical Struggle of Adaptation</p>
+
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2024-10-14"> Oct 14, 2024</time>
+
+
+                  <p class="pod-epi">Episode 04 </p>
+                </div>
+                   <!-- Audio Player -->
+               <audio controls>
+               <!-- Replace 'your-audio-file.mp3' with the actual path to your audio file -->
+               <source src="your-audio-file.mp3" type="audio/mp3">
+
+               </audio>
+
+              </div>
+
+            </a>
+          </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./images/label.jpg" alt=" Freshmen 2024 Experience with Identity Construction at CMU-Q">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+              <p>Freshmen 2024 Experience with Identity Construction at CMU-Q</p>
+
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2024-10-14"> Oct 14, 2024</time>
+
+
+                  <p class="pod-epi">Episode 03 </p>
+                </div>
+                   <!-- Audio Player -->
+               <audio controls>
+               <!-- Replace 'your-audio-file.mp3' with the actual path to your audio file -->
+               <source src="your-audio-file.mp3" type="audio/mp3">
+
+               </audio>
+
+              </div>
+
+            </a>
+          </li>
+
+
+
+       </ul>
+    </article>
+  </main>
+
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter">
+  <div class="newsletter-card">
+    <div class="card-content">
+      <h3 class="h3 card-title">Share Your Story!</h3>
+      <p class="card-text">
+        All students are encouraged to share their genuine experiences, navigating the balance between authenticity and societal expectations. Connect with us, and let's bring forth the diverse voices that shape the genuine narrative of CMU-Q. Your stories, your identities—let's keep it real.
+      </p>
+    </div>
+
+    <!-- Newsletter Form -->
+    <form action="/submit_form" class="card-form" data-form>
+      <div class=" form-container">
+         <input type="email" name="email_address" placeholder="Your Email Address" required class="input-field" data-input>
+         <button type="submit" class="btn btn-primary" data-submit>Send Us an Email</button>
+      </div>
+    </form>
+</section>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./images/gif2.gif" alt="Tartans Mic">
+          </a>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-link-title">Start A Conversation</p>
+          </li>
+
+          <li>
+            <a href="mailto:tartansmic@andrew.cmu.edu" class="footer-link">tartansmic@andrew.cmu.edu</a>
+          </li>
+
+
+
+
+        </ul>
+
+        <div class="social-list-box">
+
+          <p class="social-title">Follow Us On:</p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-soundcloud"></ion-icon>
+              </a>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2023 <a href="#">Tartansmic</a>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
