@@ -339,16 +339,48 @@
             <!--- Start new episode section-->
           </head>
             <title>${episodeTitle}</title>
+
+
+            <style>
+    body {
+      text-align: justify;
+    }
+    .container {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    figure {
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 70%;
+      margin-bottom: 20px;
+    }
+
+ p {
+      max-width: 70%;
+    }
+
+  </style>
           </head>
 
 
           <body>
-            <figure>
-              <img src="${imageSrc}" alt="${episodeTitle}" style="max-width: 70%; width: auto; height: auto">
-            </figure>
-            <p>${episodeTitle}</p>
-            <p> As students at Carnegie Mellon University in Qatar come from different backgrounds, they create this multidiverse</p>
-            <p>community</p>
+
+
+
+            <div class="text-container">
+               <figure style="margin-bottom: 20px;">
+                  <img src="${imageSrc}" alt="${episodeTitle}" style="max-width: 70%; width: auto; height: auto">
+               </figure>
+
+                     <p> In our recent conversations with students at Carnegie Mellon University in Qatar
+                        (CMU-Q), we navigated an interesting theme- the delicate balance between adaptation
+                        and authenticity. CMU-Q has a vibrant community from all walks of life. Within this diverse enviornment, many students expressed their feeling for a need to repress certain aspects of their authentic selves. Some features of their identities had to be somehow compromised--- linguistic use, cultural habits, ideological beliefs, political views, or religious affiliations, the pressure to conform is said to be tough.
+                        Snippets from our conversations reveal a fear of judgment, misunderstanding, or the weight of societal expectations has left some reluctant to put their thoughts on tapes. For some, the cost of conforming to social norms at CMU-Q has meant giving up integral facets of their identity.
+</p>
+           </div>
+
             <audio controls style="width: 70%;">
 
               <source src="./audio/Final%20Audio.mp3" type="audio/mp3">
@@ -434,7 +466,7 @@
                   <time datetime="2024-10-14"> Oct 14, 2024</time>
 
 
-                  <p class="pod-epi">Episode 04 </p>
+                  <p class="pod-epi">Episode 03 </p>
                 </div>
                    <!-- Audio Player -->
                <audio controls>
@@ -479,7 +511,7 @@
                   <time datetime="2024-10-14"> Oct 14, 2024</time>
 
 
-                  <p class="pod-epi">Episode 03 </p>
+                  <p class="pod-epi">Episode 04 </p>
                 </div>
                    <!-- Audio Player -->
                <audio controls>
